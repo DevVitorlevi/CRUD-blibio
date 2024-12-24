@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="/arquivos/form.css">
+<main>
+    <div class="container">
+        <h1>Cadastre Um Livro</h1>
+        <form action="/livros/editar" method="POST" id="form">
+            <input type="hidden" name="id" value="{{livro.id}}">
+            <!--Titulo-->
+            <div class="inputs">
+                <input type="text" name="titulo" id="titulo" class="input required" required value="{{livro.titulo}}">
+                <label>Título</label>
+                <span class="span-required">O Campo Não Pode Ser Vazio</span>
+            </div>
+            <!--Autor-->
+            <div class="inputs">
+                <input type="text" name="autor" id="autor" class="input required" required value="{{livro.autor}}">
+                <label>Autor</label>
+                <span class="span-required">O Campo Não Pode Ser Vazio</span>
+            </div>
+            <!--Ano-->
+            <div class="inputs">
+                <input type="number" name="ano" id="ano" class="input required" required value="{{livro.ano}}">
+                <label>Ano</label>
+                <span class="span-required">Ano Inválido</span>
+            </div>
+            <!--Desc-->
+            <textarea name="desc" cols="25" rows="10" placeholder="Uma Breve Descrição Do Livro" value="{{livro.descricao}}"></textarea>
+            <button type="submit" id="button">Cadastrar</button>
+        </form>
+    </div>
+</main>
+<script src="/arquivos/script.js"></script>

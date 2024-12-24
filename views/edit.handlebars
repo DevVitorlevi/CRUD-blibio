@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/arquivos/table.css">
+<div class="table">
+    <h1 class="table-titulo">Clique No Livro Que Deseja Editar</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Titulo</th>
+                <th>Autor</th>
+                <th>Ano</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each livros}}
+                <tr>
+                    <td><a href="/livros/formedit/{{this.id}}">{{this.id}}</a></td>
+                    <td><a href="/livros/formedit/{{this.id}}">{{this.titulo}}</a></td>
+                    <td><a href="/livros/formedit/{{this.id}}">{{this.autor}}</a></td>
+                    <td><a href="/livros/formedit/{{this.id}}">{{this.ano}}</a></td>
+                    <td><a href="/livros/formedit/{{this.id}}">{{this.descricao}}</a></td>
+                </tr>
+            </a>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

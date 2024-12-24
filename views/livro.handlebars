@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/arquivos/table.css">
+<div class="table">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Titulo</th>
+                <th>Autor</th>
+                <th>Ano</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>{{livro.id}}</a></td>
+                    <td>{{livro.titulo}}</a></td>
+                    <td>{{livro.autor}}</a></td>
+                    <td>{{livro.ano}}</a></td>
+                    <td>{{livro.descricao}}</a></td>
+
+                </tr>
+        </tbody>
+    </table>
+</div>
+<form action="/livros/apagar/{{livro.id}}" method="POST">
+    <button type="submit">Apagar</button>
+</form>

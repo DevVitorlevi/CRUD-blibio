@@ -29,3 +29,26 @@ td,th{
     border: 1px solid rgb(255, 255, 255);
     padding: 10px;
 }
+tbody a{
+    text-decoration: none;
+    color: white;
+}
+tbody a:hover{
+    text-decoration: underline;
+
+}
+tbody tr > td {
+    text-align: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+}
+form > button{
+    padding: 10px;
+    width: 30pc;
+    background-color:#9320e6;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+}
