@@ -13,14 +13,14 @@
         }
         body{
             background-color:#181818;
-
         }
         header{
     background-color: #4b0082;
     color:white;
     padding: 10px;
     text-align: center;
-    
+    position: sticky;
+    top: 0;
 }
 h1{
     text-indent: 15px;
@@ -90,7 +90,9 @@ footer a:hover{
     <h1>Livraria</h1>
     <nav id="navbar">
     <a href="/">Cadastre</a>
-    <a href="/livros">Livros</a>
+    <a href="/livros/todos">Livros</a>
+    <a href="/livros/edit/{{livros.id}}">Editar Livro</a>
+    <a href="/livros/remover/{{livros.id}}">Apagar Livro</a>
     </nav>
 </header>
     {{{body}}}

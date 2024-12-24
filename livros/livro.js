@@ -19,11 +19,11 @@ router.post('/inserir',(req,res)=>{
         }
         
         console.log('Livro Adicionado')
-        res.redirect('/livros')
+        res.redirect('/livros/todos')
     })
 })
 
-router.get('/livros/',(req,res)=>{
+router.get('/todos',(req,res)=>{
     const query = `SELECT * FROM livros`
 
     conn.query(query,(err,data)=>{
@@ -32,8 +32,7 @@ router.get('/livros/',(req,res)=>{
             return
         }
         const livros = data
+        res.render('livros',{livros})
     })
-
-    res.render('livros',{livros})
 })
 module.exports = router

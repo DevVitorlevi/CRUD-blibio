@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/arquivos/table.css">
+<div class="table">
+    <h1 class="table-titulo">Todos Os Livros Disponiveis</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Titulo</th>
+                <th>Autor</th>
+                <th>Ano</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each livros}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td>{{this.titulo}}</td>
+                <td>{{this.autor}}</td>
+                <td>{{this.ano}}</td>
+                <td>{{this.descricao}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

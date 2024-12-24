@@ -7,7 +7,7 @@ const livros = require('./livros/livro');
 app.engine('handlebars', exphbs.engine()); 
 app.set('view engine', 'handlebars'); 
 app.use(express.static('public'));
-app.use('/livro',livros)
+app.use('/livros',livros)
 
 app.get('/',(req,res)=>{    
     res.render('home')

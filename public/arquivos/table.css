@@ -1,0 +1,31 @@
+.table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: auto; 
+}
+.table-titulo{
+    text-align: center;
+    color: white;
+    margin: 5px;
+}
+table{
+    border-collapse: collapse;
+    color: white;
+    width: 1000px;
+    margin: 5px;
+    position: relative;
+}
+thead > tr > th{
+    position: sticky;
+    top: -1px;
+
+}
+thead{
+    background-color: #9320e6;
+}
+td,th{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+}
