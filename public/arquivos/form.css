@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+    --color-white: #fff;
+    --color-red: #e63636;
+    --color-dark1: #181818;
+    --color-dark2: #1e1e1e;
+    --color-purple1: #9333ff;
+    --color-purple2: #4b0082;
+    --color-input: ;
+    --color-input-hover: ;
+}
+main{
+    height: 100vh;
+    width: 98vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    background-color: var(--color-dark2);
+    padding: 32px;
+    width: 35vw;
+    min-width: 30%;
+    border-radius: 20px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+
+}
+
+.container form {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.span-required {
+    display:none;
+    font-size: 14px;
+    color: var(--color-red);
+    margin-top: 7px;
+}
+.inputs {
+    position: relative;
+}
+
+.input {
+    background-color: var(--color-dark1);
+    color: var(--color-white);
+    border-radius: 5px;
+    padding: 24px 16px 8px ;
+    outline: none;
+    /*borda do input */
+    border: 2px solid var(--color-dark1);
+    width: 100%;
+    box-sizing: border-box;
+    transition: .5s;
+    font-size:25px;
+}
+
+.input:focus {
+    border: 2px solid var(--color-purple1);
+
+}
+.inputs label{
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    transform: translateY(-50%);
+    color: gray;
+    pointer-events: none;
+
+}
+.inputs input:focus + label , 
+.inputs input:valid + label{
+    top: 15px;
+    font-size: 13px;
+    transition: .5s;
+}  
+button {
+    padding: 20px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: var(--color-purple2);
+    color: var(--color-white);
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: var(--color-purple1);
+}
+
+textarea {
+    resize: none;
+    padding: 5px;
+    background-color: #181818;
+    border: 0;
+    color: white;
+    outline: 0;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            background-color:#181818;
+
+        }
+        header{
+    background-color: #4b0082;
+    color:white;
+    padding: 10px;
+    text-align: center;
+    
+}
+h1{
+    text-indent: 15px;
+}
+    #navbar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+    #navbar >a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+    font-size: 20px;
+}
+    #navbar > a:hover{
+    text-decoration: underline;
+    transition: .5s;
+    transform: scale(1.03);
+}
+footer{
+    background-color: #4b0082;
+    color: white;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 20px;
+    position: sticky;
+    top: 100%;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+
+}
+footer a:hover{
+    text-decoration: underline;
+    
+}
+
+@media screen and (min-width:501px) 
+{
+
+    header{
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    header h1{
+        flex: 0 0 200px;
+        align-content: center;
+        text-align: left;
+        
+    }
+    #navbar{
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+}
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>Livraria</h1>
+    <nav id="navbar">
+    <a href="/">Cadastre</a>
+    <a href="/livros">Livros</a>
+    </nav>
+</header>
+    {{{body}}}
+    <footer>
+        <p>@2024 Desenvolvido Por <a href="https://github.com/DevVitorlevi" target="_blank">Vitor Levi 🔗</a></p>
+    </footer>
+</body>
+</html>
