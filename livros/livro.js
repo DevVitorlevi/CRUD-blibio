@@ -1,5 +1,5 @@
 const express = require('express')
-const conn = require('../db/conn')
+const conn = require('../db/conn.js')
 const router = express.Router()
 
 router.use(express.urlencoded({

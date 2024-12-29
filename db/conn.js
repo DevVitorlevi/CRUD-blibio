@@ -1,7 +1,7 @@
 const mysql = require('mysql2');
 
 // Criação da conexão com base nas variáveis de ambiente
-const connection = mysql.createConnection({
+const conn = mysql.createConnection({
     host:'localhost',
     user:'root',
     password:'',
@@ -10,10 +10,11 @@ const connection = mysql.createConnection({
 });
 
 // Testar a conexão
-connection.connect(err => {
+conn.connect(err => {
     if (err) {
         console.error('Erro ao conectar ao banco de dados:', err);
     } else {
         console.log('Conexão bem-sucedida ao banco de dados!');
     }
 });
+module.exports = conn
